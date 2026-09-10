@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://github.com/dfinity/icp-cli/raw/refs/tags/v1.3.0/docs/schemas/icp-yaml-schema.json
+
+canisters:
+  - name: username_registry
+    recipe:
+      type: "@dfinity/motoko@v5.1.0"
+
+# Implicit `ic` also exists. Named `mainnet` so `./deploy.sh mainnet` cannot
+# accidentally hit the local replica (`icp deploy` with no -e).
+environments:
+  - name: mainnet
+    network: ic
+    canisters:
+      - username_registry

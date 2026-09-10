@@ -1,0 +1,9 @@
+type Result = variant { ok; err : text };
+
+service : {
+  claim : (text, text, bool, opt text) -> (Result);
+  isTaken : (text) -> (bool) query;
+  resolve : (text) -> (opt text) query;
+  listUsernames : () -> (vec text) query;
+  userCount : () -> (nat) query;
+}

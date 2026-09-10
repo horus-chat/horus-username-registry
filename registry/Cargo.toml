@@ -1,0 +1,16 @@
+[package]
+name = "horus-registry"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Privacy-first username commitments (no messages, no plaintext pubkey directory)"
+repository = "https://github.com/horus-chat/horus-username-registry"
+readme = "../README.md"
+
+[lib]
+name = "horus_registry"
+path = "src/lib.rs"
+
+[dependencies]
+sha2 = "0.10"
+serde = { version = "1", features = ["derive"] }

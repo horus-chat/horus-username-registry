@@ -1,0 +1,8 @@
+[toolchain]
+moc = "1.14.0"
+
+[dependencies]
+base = "0.14.9"
+
+[canisters]
+username_registry = "src/main.mo"

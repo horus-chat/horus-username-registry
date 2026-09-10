@@ -1,0 +1,7 @@
+target/
+Cargo.lock
+.DS_Store
+canister/.dfx/
+canister/.icp/
+canister/.canister_id
+canister/declarations/
